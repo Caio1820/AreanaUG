@@ -1,0 +1,6 @@
+{
+  "name": "Arena Underground Games - BioSite & Portal de Agendamento",
+  "description": "A primeira Arena Gamer do Amapá. PCs de Alta Performance, VR, Nintendo Switch e PS5 no Centro de Macapá. Catálogo de pacotes e agendamento rápido pelo WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
