@@ -97,3 +97,16 @@ Este registro documenta as tarefas planejadas, critérios de aceite e os respect
 - **Critérios de Aceite**:
   - [x] `ARENA_MAPS_URL` aponta exatamente para `https://maps.app.goo.gl/RoX8LEsR1AYDRTzw7`.
   - [x] Testes unitários atualizados e validados com sucesso.
+
+---
+
+## Issue #08: Correção de Assets e Imagens para Deploy na Vercel (Produção)
+- **Status**: Concluído (Closed via PR #08)
+- **Escopo**:
+  - Migração da logo oficial de URL externa remota (que sofria bloqueio de hotlink na Vercel/CORS) para asset local empacotado pelo Vite (`src/assets/images/logo.jpg` e `/public/images/logo.jpg`).
+  - Importação estática via ESM de todas as imagens das estações em `src/data/stations.ts`, permitindo que o Vite faça o hash e exporte os arquivos para `dist/assets/` durante `npm run build`.
+  - Criação da pasta estática `/public/images/` para garantir redundância em produção.
+- **Critérios de Aceite**:
+  - [x] `npm run build` empacota com sucesso todos os assets para `dist/assets/` e `dist/images/`.
+  - [x] Imagens da logo e estações funcionam localmente e em qualquer domínio de deploy (Vercel, Cloud Run, Netlify).
+  - [x] Zero erros de 404 em tempo de execução.

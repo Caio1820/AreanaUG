@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { MapPin, Gamepad2, Clock, Sparkles, ShieldCheck, Flame } from 'lucide-react';
 import { getWhatsAppLink, ARENA_MAPS_URL } from '../utils/whatsapp.ts';
 import { telemetry } from '../utils/telemetry.ts';
+import logoImg from '../assets/images/logo.jpg';
 
 interface HeaderProps {
   onNavigateSection: (sectionId: string) => void;
@@ -43,10 +44,9 @@ export const Header: React.FC<HeaderProps> = ({ onNavigateSection }) => {
           <div className="w-8 h-8 rounded-full overflow-hidden border border-[#FF6600]/60 glow-orange-sm flex items-center justify-center bg-black">
             {!imgError ? (
               <img
-                src="https://i.postimg.cc/8CJ91P7H/AU.jpg"
+                src={logoImg}
                 alt="AU Logo"
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
                 onError={() => setImgError(true)}
               />
             ) : (
@@ -117,10 +117,9 @@ export const Header: React.FC<HeaderProps> = ({ onNavigateSection }) => {
             <div className="w-full h-full rounded-full overflow-hidden bg-black flex items-center justify-center">
               {!imgError ? (
                 <img
-                  src="https://i.postimg.cc/8CJ91P7H/AU.jpg"
+                  src={logoImg}
                   alt="Arena Underground Games Logo"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                   onError={() => setImgError(true)}
                 />
               ) : (

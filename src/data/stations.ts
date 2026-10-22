@@ -1,4 +1,7 @@
 import { StationItem } from '../types.ts';
+import pcGamerImg from '../assets/images/arena_pc_gaming_stations_1792673968217.jpg';
+import ps5LoungeImg from '../assets/images/arena_console_lounge_1792673968138.jpg';
+import vrExperienceImg from '../assets/images/arena_vr_experience_1792673968275.jpg';
 
 export const STATIONS_DATA: StationItem[] = [
   {
@@ -6,7 +9,7 @@ export const STATIONS_DATA: StationItem[] = [
     name: 'PCs Gamers de Alta Performance',
     subtitle: 'Competitivo & E-sports 240Hz',
     description: 'Bancadas equipadas com processadores de última geração, placas GeForce RTX, monitores gamers 240Hz/1ms e periféricos mecânicos profissionais para precisão cirúrgica.',
-    image: '/src/assets/images/arena_pc_gaming_stations_1792673968217.jpg',
+    image: pcGamerImg,
     hourlyRate: 'R$ 20,00 / hora',
     specs: [
       'Monitores 240Hz 1ms G-Sync',
@@ -21,7 +24,7 @@ export const STATIONS_DATA: StationItem[] = [
     name: 'PlayStation 5 Lounge 4K HDR',
     subtitle: 'Consoles de Última Geração',
     description: 'Poltronas confortáveis, telas 4K HDR de alta fidelidade e controles sem fio DualSense com feedback háptico e gatilhos adaptáveis para uma experiência cinematográfica.',
-    image: '/src/assets/images/arena_console_lounge_1792673968138.jpg',
+    image: ps5LoungeImg,
     hourlyRate: 'R$ 20,00 / hora',
     specs: [
       'Telas 4K HDR ultra vibrantes',
@@ -36,7 +39,7 @@ export const STATIONS_DATA: StationItem[] = [
     name: 'Realidade Virtual Imersiva (VR)',
     subtitle: 'Meta Quest 3 & Sensores 360°',
     description: 'Espaço com demarcação de segurança, óculos de Realidade Virtual com rastreamento corporal de alta precisão e catálogo de títulos eletrizantes.',
-    image: '/src/assets/images/arena_vr_experience_1792673968275.jpg',
+    image: vrExperienceImg,
     hourlyRate: 'R$ 20,00 / hora',
     specs: [
       'Rastreamento espacial 6DoF',
@@ -51,7 +54,7 @@ export const STATIONS_DATA: StationItem[] = [
     name: 'Nintendo Switch Party Lounge',
     subtitle: 'Diversão Co-op & Família',
     description: 'O melhor espaço para rir e disputar partidas em grupo de 2 a 4 jogadores simultâneos na mesma tela com Joy-Cons e controles Pro.',
-    image: '/src/assets/images/arena_console_lounge_1792673968138.jpg',
+    image: ps5LoungeImg,
     hourlyRate: 'R$ 20,00 / hora',
     specs: [
       'Até 4 jogadores na mesma tela',
